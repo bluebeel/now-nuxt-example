@@ -1,0 +1,8 @@
+{
+    "version": 2,
+    "name": "nuxt",
+    "public": true,
+    "builds": [
+        { "src": "nuxt.config.js", "use": "@bluebeel/nuxt" }
+    ]
+}
