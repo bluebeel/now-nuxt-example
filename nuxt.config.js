@@ -1,5 +1,5 @@
 module.exports = () => {
-  const pkg = require('./package');
+  const pkg = require('./package')
   return {
     mode: 'universal',
     /*
@@ -7,7 +7,8 @@ module.exports = () => {
      */
     head: {
       title: pkg.name,
-      meta: [{
+      meta: [
+        {
           charset: 'utf-8'
         },
         {
@@ -20,11 +21,13 @@ module.exports = () => {
           content: pkg.description
         }
       ],
-      link: [{
-        rel: 'icon',
-        type: 'image/x-icon',
-        href: '/favicon.ico'
-      }]
+      link: [
+        {
+          rel: 'icon',
+          type: 'image/x-icon',
+          href: '/favicon.ico'
+        }
+      ]
     },
     /*
      ** Customize the progress-bar color
@@ -35,21 +38,17 @@ module.exports = () => {
     /*
      ** Global CSS
      */
-    css: [
-      '~/assets/css/tailwind.css'
-    ],
+    css: ['~/assets/css/tailwind.css'],
 
-    modules: [
-      '@nuxtjs/sitemap'
-    ],
+    modules: ['@nuxtjs/sitemap'],
     /*
      ** Plugins to load before mounting the App
      */
     plugins: [],
 
-    
     sitemap: {
       path: '/sitemap.xml',
+      generate: true
     },
     /*
      ** Build configuration
@@ -75,4 +74,4 @@ module.exports = () => {
       }
     }
   }
-};
+}
